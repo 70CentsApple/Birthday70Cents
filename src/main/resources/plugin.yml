@@ -1,0 +1,36 @@
+name: Birthday70Cents
+version: 1.0.0
+main: net.apple70cents.birthday70Cents.Birthday70Cents
+api-version: '1.21.4'
+prefix: Birthday70Cents
+authors: [ 70CentsApple ]
+description: Birthday presents!!!
+website: https://70centsapple.top/
+folia-supported: true
+
+commands:
+  birthday70cents:
+    aliases: [ birthday, bday ]
+    permission: birthday.basic.help
+    permission-message: "You do NOT have permission to use this command."
+    description: "Birthday plugin command"
+    usage: "Please see /birthday help for usages."
+
+permissions:
+  birthday.basic:
+    description: "For basic birthday features"
+    default: true
+    children:
+      birthday.basic.help: true
+      birthday.basic.set: true
+      birthday.basic.withdraw: true
+
+  birthday.admin:
+    description: "For birthday presents management"
+    default: op
+    children:
+      birthday.admin.edit: true
+      birthday.admin.get: true
+      birthday.admin.query: true
+      birthday.admin.modify: true
+      birthday.admin.reload: true

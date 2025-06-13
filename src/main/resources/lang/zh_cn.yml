@@ -1,0 +1,57 @@
+help-menu:
+  help: '/birthday help - <gray>展示此菜单</gray>'
+  set: '/birthday set <MM-dd> - <aqua>设置个人生日</aqua>'
+  withdraw: '/birthday withdraw - <aqua>领取生日礼物</aqua>'
+  edit: '/birthday edit - <gold>修改生日礼物物品与动作链</gold>'
+  get: '/birthday get - <gold>获得测试生日礼物物品</gold>'
+  query: '/birthday query <玩家> - <gold>获得玩家生日信息</gold>'
+  modify: '/birthday modify <玩家> <是否重置今年领取状态> - <gold>修改玩家生日</gold>'
+  reload: '/birthday reload - <gold>重载配置</gold>'
+
+feedback:
+  withdraw-success: '<gold>生日快乐！礼物已发放，用右键来拆开礼物！</gold>'
+  set-success: '<gold>您的生日已被设置为 <aqua>%0%-%1%</aqua>！</gold>'
+  modify-success: '<gold>成功将玩家 <aqua>%0%</aqua> 的生日设置为 <aqua>%1%-%2%</aqua>，原来的生日为 <aqua>%3%</aqua>！</gold>'
+  query-success: '<gold>%0% 的生日是 <aqua>%1%</aqua>，其今年礼物获取状态：<aqua>%2%</aqua></gold>'
+  reload: '<gold>Birthday70Cents 已重载配置！</gold>'
+  error-non-player: '<gold>只有玩家才能执行此操作！</gold>'
+  error-invalid-date: '<gold>不合理的日期！</gold>'
+  error-has-set-birthday: '<gold>你已经设置过一个生日（<aqua>%0%-%1%</aqua>）啦！</gold>'
+  error-has-withdrawn-this-year: '<gold>你今年已经领取过生日礼物啦！</gold>'
+  error-birthday-not-set-yet: '<gold>还未设置生日！</gold>'
+  error-not-birthday-today: '<gold>今天不是你的生日！你的生日在<aqua>%0%-%1%</aqua></gold>'
+  error-timeout: '<red>操作超时……已取消。</red>'
+  edit-command: '<gold>请在聊天栏输入更改后的命令，点击我可以插入原命令。<br>也可以输入 <i>#end</i> 取消编辑。</gold>'
+  edit-command-canceled: '<red>已取消。</red>'
+  edit-command-success: '<gold>已将命令更改为 %0%</gold>'
+
+gui:
+  buttons:
+    sort: <green><b>排序</b></green>
+    sort-lore-1: <aqua>按照从左到右，从上到下的顺序重新排序。</aqua>
+    sort-lore-2: <red>重要：编辑节点等重要操作前请务必执行一次排序操作！！</red>
+    sort-lore-3: <red>由于调度器缘故，节点可能不会严格按顺序执行！</red>
+    get-item-node: <green><b>获取物品节点</b></green>
+    get-item-node-lore: <aqua>放置后请点击排序以实体化</aqua>
+    get-command-node: <green><b>获取指令节点</b></green>
+    get-command-node-lore: <aqua>放置后请点击排序以实体化</aqua>
+    item-node-edit-tips: <green><b>物品节点操作提示</b></green>
+    item-node-edit-tips-lore: <aqua>右键点击下方的格子获取物品，或将光标物品替换为此节点的物品。</aqua>
+    command-node-edit-command: <green><b>编辑命令</b></green>
+    command-node-edit-command-lore-1: <aqua>左键点击我，输入需要更新的指令</aqua>
+    command-node-edit-command-lore-2: <aqua>当前：</aqua><gold>%0%</gold>
+    command-node-edit-as-console: <green><b>以控制台身份执行</b></green>
+    command-node-edit-as-console-lore-1: <aqua>左键点击我，切换是否以控制台身份执行。</aqua>
+    command-node-edit-as-console-lore-2: <aqua>当前：</aqua><gold>%0%</gold>
+    present-item-tips: <green><b>提示！</b></green>
+    present-item-tips-lore-1: <aqua>右边的是礼物原型，可以用物品栏物品替换！</aqua>
+    present-item-tips-lore-2: <aqua>可以通过右键获取</aqua>
+  nodes:
+    command: <green><b>指令节点</b></green>
+    item: <green><b>物品节点</b></green>
+  details:
+    node-trail: '<green>左键 移动改变顺序 | 右键 编辑 | 丢弃 删除</green>'
+    command-content: '<aqua>命令 - </aqua><gold>%0%</gold>'
+    command-as-console: '<aqua>以控制台身份执行 - </aqua><gold>%0%</gold>'
+    item-content: '<aqua>物品 - </aqua>'
+    item-amount: '<aqua>数量 - </aqua><gold>%0%</gold>'

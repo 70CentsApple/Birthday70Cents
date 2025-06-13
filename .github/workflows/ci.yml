@@ -1,0 +1,46 @@
+name: build
+on: [pull_request, push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK ${{ matrix.java-version }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: 22
+
+      - name: Build with gradle
+        run: |
+          chmod +x gradlew
+          echo "Building..."
+          ./gradlew build
+        env:
+          BUILD_ID: ${{ github.run_number }}
+          BUILD_RELEASE: false
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Artifacts
+          path: build/libs
+
+  summary:
+    runs-on: ubuntu-22.04
+    needs:
+      - build
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: Artifacts
+          path: gathered-artifacts
+
+      - name: Make build summary
+        run: python3 .github/workflows/scripts/summary.py  # ubuntu-22.04 uses Python 3.10.6

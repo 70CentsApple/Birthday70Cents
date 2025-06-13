@@ -1,0 +1,57 @@
+help-menu:
+  help: '/birthday help - <gray>Show this help menu.</gray>'
+  set: '/birthday set <MM-dd> - <aqua>Set my birthday.</aqua>'
+  withdraw: '/birthday withdraw - <aqua>Claim my present if it''s my birthday.</aqua>'
+  edit: '/birthday edit - <gold>Edit the present and it''s actions chain.</gold>'
+  get: '/birthday get - <gold>Get a present for test.</gold>'
+  query: '/birthday query <Player> - <gold>Get someone''s birthday info.</gold>'
+  modify: '/birthday modify <Player> <ResetWithdrawnStatusThisYear> - <gold>Change someone''s birthday.</gold>'
+  reload: '/birthday reload - <gold>Reload the config.</gold>'
+
+feedback:
+  withdraw-success: '<gold>Happy birthday! Here is your present!<br>Right click to unwrap it.</gold>'
+  set-success: '<gold>Your birthday has been set to <aqua>%0%-%1%!</aqua></gold>'
+  modify-success: '<gold>Successfully modified %0%''s birthday to <aqua>%1%-%2%</aqua> from <aqua>%3%</aqua>!</gold>'
+  query-success: '<gold>%0%''s birthday is <aqua>%1%</aqua>!<br>Has the player withdrawn this year''s present? <aqua>%2%</aqua></gold>'
+  reload: '<gold>Reloaded Birthday70Cents!</gold>'
+  error-non-player: '<gold>Only players are allowed to do this!</gold>'
+  error-invalid-date: '<gold>It''s an invalid date!</gold>'
+  error-has-set-birthday: '<gold>You have set a birthday before: <aqua>%0%-%1%</aqua></gold>'
+  error-has-withdrawn-this-year: '<gold>You have withdrawn your birthday present this year!</gold>'
+  error-birthday-not-set-yet: '<gold>You have NOT set your birthday yet!</gold>'
+  error-not-birthday-today: '<gold>Not your birthday today! Your birthday is <aqua>%0%-%1%</aqua></gold>'
+  error-timeout: '<red>Timeout for the behaviour... Canceled.</red>'
+  edit-command: '<gold>Please enter the command. The old command can be inserted by clicking here.<br>You can also enter <i>#end</i> to quit editing.'
+  edit-command-canceled: '<red>Canceled.</red>'
+  edit-command-success: '<gold>Command has been changed to %0%</gold>'
+
+gui:
+  buttons:
+    sort: <green><b>Sort Nodes</b></green>
+    sort-lore-1: <aqua>Reorder nodes from left to right, top to bottom.</aqua>
+    sort-lore-2: <red>You SHOULD sort before editing a node or performing other key behaviours!</red>
+    sort-lore-3: <red>Due to schedulers, nodes may not be executed in strict order!</red>
+    get-item-node: <green><b>Get Item Node</b></green>
+    get-item-node-lore: <aqua>Place it and click Sort to materialize.</aqua>
+    get-command-node: <green><b>Get Command Node</b></green>
+    get-command-node-lore: <aqua>Place it and click Sort to materialize.</aqua>
+    item-node-edit-tips: <green><b>Item Node Edit Hint</b></green>
+    item-node-edit-tips-lore: <aqua>Right click the slot below to get an item, or replace the cursor item with this node's item.</aqua>
+    command-node-edit-command: <green><b>Edit Command</b></green>
+    command-node-edit-command-lore-1: <aqua>Left click me to input the command to update.</aqua>
+    command-node-edit-command-lore-2: <aqua>Now:</aqua> <gold>%0%</gold>
+    command-node-edit-as-console: <green><b>Execute as Console</b></green>
+    command-node-edit-as-console-lore-1: <aqua>Left click me to toggle whether to execute as console.</aqua>
+    command-node-edit-as-console-lore-2: <aqua>Now:</aqua> <gold>%0%</gold>
+    present-item-tips: <green><b>TIPS!</b></green>
+    present-item-tips-lore-1: <aqua>The item on the right is the prototype of the present, you can replace it with an item in your inventory!</aqua>
+    present-item-tips-lore-2: <aqua>You can get it by right clicking.</aqua>
+  nodes:
+    command: <green><b>Command Node</b></green>
+    item: <green><b>Item Node</b></green>
+  details:
+    node-trail: '<green>Left Click to adjust sequence. | Right Click to edit. | Drop to delete.</green>'
+    command-content: '<aqua>Command - </aqua><gold>%0%</gold>'
+    command-as-console: '<aqua>As Console - </aqua><gold>%0%</gold>'
+    item-content: '<aqua>Item - </aqua>'
+    item-amount: '<aqua>Amount - </aqua><gold>%0%</gold>'

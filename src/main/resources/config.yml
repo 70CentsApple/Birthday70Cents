@@ -1,0 +1,8 @@
+# Language, takes value: [en_us, zh_cn]
+language: en_us
+
+# If a player's birthday is 02-29:
+# 0  - They could only withdraw their present at exactly 02-29.
+# 1  - If this year is not a leap year, consider the user's birthday as 03-01.
+# -1 - If this year is not a leap year, consider the user's birthday as 02-28.
+adjust-leap-year: 0
