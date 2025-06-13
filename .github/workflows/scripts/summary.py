@@ -17,7 +17,7 @@ def main():
         f.write('| File | Size | SHA-256 |\n')
         f.write('| --- | --- | --- |\n')
 
-        file_paths = glob.glob(f'build/libs/*.jar')
+        file_paths = glob.glob(f'artifact/*.jar')
         if len(file_paths) == 0:
             file_name = '*NOT FOUND*'
             file_size = '*N/A*'

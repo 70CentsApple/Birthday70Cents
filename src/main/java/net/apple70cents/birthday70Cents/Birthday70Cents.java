@@ -8,7 +8,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.*;
 
 public final class Birthday70Cents extends JavaPlugin {
-    //TODO folia support
     @Override
     public void onEnable() {
         Objects.requireNonNull(getCommand("birthday")).setExecutor(new CommandExecutor());

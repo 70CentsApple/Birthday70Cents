@@ -40,7 +40,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: Artifacts
-          path: gathered-artifacts
+          path: artifact
 
       - name: Make build summary
         run: python3 .github/workflows/scripts/summary.py  # ubuntu-22.04 uses Python 3.10.6
