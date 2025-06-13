@@ -1,4 +1,5 @@
 # 🎂 Birthday70Cents
+[>>English<<](README_en.md)
 
 > 🎁 一款适用于 Minecraft 1.21.4 的生日礼物插件。
 
