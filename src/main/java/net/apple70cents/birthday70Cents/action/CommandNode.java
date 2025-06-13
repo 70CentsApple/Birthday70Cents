@@ -38,6 +38,7 @@ public class CommandNode implements ActionNode {
             }
         }, () -> {
         });
+        plugin.getLogger().info("Executed command: \"" + command + "\" for player: \"" + player.getName() + "\". As console? " + asConsole);
     }
 
     @Override
