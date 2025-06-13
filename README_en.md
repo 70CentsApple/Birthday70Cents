@@ -1,4 +1,10 @@
+<div align="center">
+
+<img alt="LOGO" src="./images/icon.png" width="200" height="200" />
+
 # 🎂 Birthday70Cents
+</div>
+
 [>>Simplified Chinese<<](README.md)
 
 > 🎁 A Minecraft 1.21.4 plugin for birthday gifts by [70CentsApple](https://github.com/70CentsApple).

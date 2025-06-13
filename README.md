@@ -1,4 +1,10 @@
+<div align="center">
+
+<img alt="LOGO" src="./images/icon.png" width="200" height="200" />
+
 # 🎂 Birthday70Cents
+</div>
+
 [>>English<<](README_en.md)
 
 > 🎁 一款适用于 Minecraft 1.21.4 的生日礼物插件。
